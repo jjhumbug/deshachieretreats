@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Location Map – deShaChie Retreat 2026</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">deShaChie Retreat <span>'26</span></a>
+      <div class="nav-links">
+        <a href="index.html">Schedule</a>
+        <a href="map.html" class="active">Location</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="map-hero">
+    <p class="hero-eyebrow">Venue</p>
+    <h1>Loon Lake Lodge</h1>
+    <p>June 24 – 26, 2026 &nbsp;·&nbsp; [Address, City, Province]</p>
+  </header>
+
+  <main class="map-main">
+
+    <!-- ILLUSTRATED SITE MAP -->
+    <div class="map-wrap">
+      <div class="site-svg-wrap">
+        <svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated site map of Loon Lake Lodge">
+          <!-- Background -->
+          <rect width="800" height="520" fill="#f0ede6"/>
+
+          <!-- Lake -->
+          <ellipse cx="630" cy="340" rx="145" ry="110" fill="#a8d0e6" opacity=".85"/>
+          <ellipse cx="630" cy="340" rx="145" ry="110" fill="none" stroke="#6aafd4" stroke-width="2"/>
+          <text x="630" y="310" text-anchor="middle" font-family="Playfair Display, serif" font-size="16" fill="#2b6c9a" font-weight="700">Loon Lake</text>
+          <!-- Lake ripples -->
+          <ellipse cx="620" cy="355" rx="28" ry="8" fill="none" stroke="#6aafd4" stroke-width="1" opacity=".5"/>
+          <ellipse cx="645" cy="365" rx="18" ry="5" fill="none" stroke="#6aafd4" stroke-width="1" opacity=".4"/>
+
+          <!-- Forest areas (top and left) -->
+          <!-- Top forest -->
+          <rect x="0" y="0" width="800" height="80" fill="#c8dfc8" opacity=".5" rx="0"/>
+          <!-- Trees along top -->
+          <g fill="#2d5a3d" opacity=".8">
+            <polygon points="40,70 55,35 70,70"/>
+            <polygon points="55,75 68,45 80,75"/>
+            <polygon points="100,72 115,38 130,72"/>
+            <polygon points="115,78 127,50 140,78"/>
+            <polygon points="170,70 185,35 200,70"/>
+            <polygon points="240,74 255,42 270,74"/>
+            <polygon points="255,80 267,52 280,80"/>
+            <polygon points="320,68 335,33 350,68"/>
+            <polygon points="390,72 405,38 420,72"/>
+            <polygon points="460,70 475,36 490,70"/>
+            <polygon points="530,73 545,40 560,73"/>
+            <polygon points="600,70 615,36 630,70"/>
+            <polygon points="670,72 685,38 700,72"/>
+            <polygon points="730,70 745,35 760,70"/>
+          </g>
+
+          <!-- Left forest strip -->
+          <rect x="0" y="80" width="60" height="360" fill="#c8dfc8" opacity=".4"/>
+          <g fill="#2d5a3d" opacity=".7">
+            <polygon points="5,150 20,115 35,150"/>
+            <polygon points="8,220 23,185 38,220"/>
+            <polygon points="5,300 20,265 35,300"/>
+            <polygon points="8,380 23,345 38,380"/>
+          </g>
+
+          <!-- Paths / roads -->
+          <line x1="120" y1="80" x2="120" y2="440" stroke="#d4c9b0" stroke-width="12" stroke-linecap="round"/>
+          <line x1="120" y1="440" x2="490" y2="440" stroke="#d4c9b0" stroke-width="12" stroke-linecap="round"/>
+          <line x1="120" y1="200" x2="360" y2="200" stroke="#d4c9b0" stroke-width="8" stroke-linecap="round"/>
+          <line x1="120" y1="320" x2="280" y2="320" stroke="#d4c9b0" stroke-width="8" stroke-linecap="round"/>
+          <line x1="360" y1="200" x2="490" y2="300" stroke="#d4c9b0" stroke-width="8" stroke-linecap="round"/>
+
+          <!-- Trail -->
+          <path d="M 490 300 Q 540 290 560 330 Q 580 365 620 380" stroke="#b5a882" stroke-width="3" stroke-dasharray="8,5" fill="none"/>
+          <text x="540" y="285" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#7a6e52" font-style="italic">Forest Trail</text>
+
+          <!-- ── BUILDINGS ─────────────────────────── -->
+
+          <!-- Main Lodge -->
+          <rect x="150" y="100" width="120" height="80" rx="5" fill="#8B6F4E" stroke="#6b5038" stroke-width="2"/>
+          <rect x="165" y="80" width="90" height="25" rx="3" fill="#7a5f3e" stroke="#6b5038" stroke-width="1.5"/>
+          <rect x="195" y="155" width="30" height="25" rx="2" fill="#5c4026"/>
+          <text x="210" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#fff">Main Lodge</text>
+          <circle cx="149" cy="140" r="10" fill="#1e3d2a" stroke="#fff" stroke-width="1.5"/>
+          <text x="149" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#fff">A</text>
+
+          <!-- Great Hall -->
+          <rect x="300" y="100" width="130" height="80" rx="5" fill="#7a6048" stroke="#6b5038" stroke-width="2"/>
+          <rect x="310" y="82" width="110" height="22" rx="3" fill="#6a5038"/>
+          <rect x="350" y="155" width="30" height="25" rx="2" fill="#5c4026"/>
+          <text x="365" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#fff">Great Hall</text>
+          <circle cx="299" cy="140" r="10" fill="#1e3d2a" stroke="#fff" stroke-width="1.5"/>
+          <text x="299" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#fff">B</text>
+
+          <!-- Seminar Room -->
+          <rect x="190" y="220" width="110" height="70" rx="5" fill="#6a8060" stroke="#4a6040" stroke-width="2"/>
+          <rect x="230" y="280" width="30" height="18" rx="2" fill="#3a5030"/>
+          <text x="245" y="260" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#fff">Seminar Room</text>
+          <circle cx="189" cy="255" r="10" fill="#1e3d2a" stroke="#fff" stroke-width="1.5"/>
+          <text x="189" y="260" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#fff">C</text>
+
+          <!-- Dining Hall -->
+          <rect x="150" y="340" width="115" height="70" rx="5" fill="#c47c3e" stroke="#a05e28" stroke-width="2"/>
+          <rect x="190" y="395" width="30" height="18" rx="2" fill="#8a4e1a"/>
+          <text x="207" y="378" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#fff">Dining Hall</text>
+          <circle cx="149" cy="375" r="10" fill="#1e3d2a" stroke="#fff" stroke-width="1.5"/>
+          <text x="149" y="380" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#fff">D</text>
+
+          <!-- Cabin Row -->
+          <g>
+            <rect x="330" y="340" width="50" height="40" rx="4" fill="#9e7b56" stroke="#7a5c38" stroke-width="1.5"/>
+            <rect x="340" y="330" width="30" height="14" rx="2" fill="#8a6840"/>
+            <rect x="390" y="340" width="50" height="40" rx="4" fill="#9e7b56" stroke="#7a5c38" stroke-width="1.5"/>
+            <rect x="400" y="330" width="30" height="14" rx="2" fill="#8a6840"/>
+            <rect x="450" y="340" width="50" height="40" rx="4" fill="#9e7b56" stroke="#7a5c38" stroke-width="1.5"/>
+            <rect x="460" y="330" width="30" height="14" rx="2" fill="#8a6840"/>
+            <text x="415" y="400" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#5a3a18">Cabin Row</text>
+            <circle cx="329" cy="360" r="10" fill="#1e3d2a" stroke="#fff" stroke-width="1.5"/>
+            <text x="329" y="365" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#fff">E</text>
+          </g>
+
+          <!-- Fire Pit -->
+          <circle cx="280" cy="430" r="18" fill="#d4a853" stroke="#b8842e" stroke-width="2"/>
+          <circle cx="280" cy="430" r="10" fill="#e07020"/>
+          <text x="280" y="464" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#7a5020">Fire Pit</text>
+          <circle cx="261" cy="420" r="9" fill="#1e3d2a" stroke="#fff" stroke-width="1.5"/>
+          <text x="261" y="424" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#fff">F</text>
+
+          <!-- Lake Dock -->
+          <rect x="490" y="290" width="55" height="12" rx="3" fill="#8B6F4E" stroke="#6b5038" stroke-width="1.5"/>
+          <rect x="536" y="278" width="12" height="40" rx="2" fill="#8B6F4E" stroke="#6b5038" stroke-width="1"/>
+          <text x="520" y="276" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#2b4a2a">Lake Dock</text>
+          <circle cx="489" cy="296" r="9" fill="#1e3d2a" stroke="#fff" stroke-width="1.5"/>
+          <text x="489" y="300" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#fff">G</text>
+
+          <!-- Lakeside Deck -->
+          <rect x="490" y="220" width="70" height="45" rx="4" fill="#b8956a" stroke="#8a6840" stroke-width="1.5" opacity=".9"/>
+          <text x="525" y="247" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#fff">Lakeside Deck</text>
+          <circle cx="489" cy="242" r="9" fill="#1e3d2a" stroke="#fff" stroke-width="1.5"/>
+          <text x="489" y="246" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#fff">H</text>
+
+          <!-- Compass rose -->
+          <g transform="translate(748, 480)">
+            <circle cx="0" cy="0" r="22" fill="#fff" stroke="#c0b89a" stroke-width="1.5" opacity=".9"/>
+            <polygon points="0,-18 4,-4 0,-8 -4,-4" fill="#1e3d2a"/>
+            <polygon points="0,18 4,4 0,8 -4,4" fill="#999"/>
+            <polygon points="-18,0 -4,-4 -8,0 -4,4" fill="#999"/>
+            <polygon points="18,0 4,-4 8,0 4,4" fill="#999"/>
+            <text x="0" y="-6" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#1e3d2a">N</text>
+          </g>
+
+          <!-- Scale bar -->
+          <line x1="660" y1="482" x2="730" y2="482" stroke="#666" stroke-width="2"/>
+          <line x1="660" y1="477" x2="660" y2="487" stroke="#666" stroke-width="2"/>
+          <line x1="730" y1="477" x2="730" y2="487" stroke="#666" stroke-width="2"/>
+          <text x="695" y="498" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#666">~200 m</text>
+
+          <!-- Map title -->
+          <rect x="0" y="472" width="200" height="48" fill="#1e3d2a" opacity=".85"/>
+          <text x="100" y="492" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#f7f3ec">Loon Lake Lodge</text>
+          <text x="100" y="508" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(247,243,236,.7)">Site Map — Not to scale</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- LOCATION KEY -->
+    <h2 class="section-title" style="margin-top:40px;">Key Locations</h2>
+    <p class="section-sub">All venues used during the retreat.</p>
+
+    <div class="location-grid">
+      <div class="location-card">
+        <div class="loc-icon">🏠</div>
+        <div class="loc-name"><strong>A</strong> · Main Lodge</div>
+        <div class="loc-desc">Check-in desk, reception, and common lounge. First stop when you arrive.</div>
+      </div>
+      <div class="location-card">
+        <div class="loc-icon">🎤</div>
+        <div class="loc-name"><strong>B</strong> · Great Hall</div>
+        <div class="loc-desc">Main presentation venue for talks, keynotes, and large group sessions. Projector + PA system available.</div>
+      </div>
+      <div class="location-card">
+        <div class="loc-icon">📋</div>
+        <div class="loc-name"><strong>C</strong> · Seminar Room</div>
+        <div class="loc-desc">Breakout and workshop space for smaller group sessions and roundtables. Whiteboard available.</div>
+      </div>
+      <div class="location-card">
+        <div class="loc-icon">🍽️</div>
+        <div class="loc-name"><strong>D</strong> · Dining Hall</div>
+        <div class="loc-desc">All meals served here. Dietary restrictions accommodated — contact [organizer] with needs.</div>
+      </div>
+      <div class="location-card">
+        <div class="loc-icon">🛏️</div>
+        <div class="loc-name"><strong>E</strong> · Cabin Row</div>
+        <div class="loc-desc">Guest cabins for overnight stays. Cabin assignments listed in your welcome packet.</div>
+      </div>
+      <div class="location-card">
+        <div class="loc-icon">🔥</div>
+        <div class="loc-name"><strong>F</strong> · Fire Pit</div>
+        <div class="loc-desc">Outdoor gathering area. Used for the Day 1 bonfire. S'mores provided!</div>
+      </div>
+      <div class="location-card">
+        <div class="loc-icon">🚣</div>
+        <div class="loc-name"><strong>G</strong> · Lake Dock</div>
+        <div class="loc-desc">Kayak launch point. Life jackets required. Kayaks available first-come, first-served during free time.</div>
+      </div>
+      <div class="location-card">
+        <div class="loc-icon">🌅</div>
+        <div class="loc-name"><strong>H</strong> · Lakeside Deck</div>
+        <div class="loc-desc">Outdoor deck with lake views. Afternoon breaks and the farewell gathering on Day 3.</div>
+      </div>
+    </div>
+
+    <!-- DIRECTIONS -->
+    <div class="map-directions">
+      <h2>Getting There</h2>
+      <p><strong>Address:</strong> [Loon Lake Lodge Full Address Here]</p>
+      <ul>
+        <li><strong>By car:</strong> [Add driving directions, e.g. "Take Hwy X north for Y km, turn left on Lodge Road..."]</li>
+        <li><strong>Parking:</strong> Free parking available in the north lot. Carpooling encouraged.</li>
+        <li><strong>Shuttle:</strong> [Add shuttle details if applicable, e.g. "Shuttle departs from [location] at [time]"]</li>
+        <li><strong>Check-in:</strong> Rooms available from [time] on June 24. Late arrivals please contact [name].</li>
+        <li><strong>Questions:</strong> Contact [Organizer Name] at [email or phone]</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>deShaChie Lab · Loon Lake Lodge · June 24–26, 2026</p>
+    <a href="index.html">← Back to Schedule</a>
+  </footer>
+
+</body>
+</html>

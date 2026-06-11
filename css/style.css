@@ -1,0 +1,318 @@
+/* ─── TOKENS ─────────────────────────────────────────────── */
+:root {
+  --pine:      #1e3d2a;
+  --pine-mid:  #2d5a3d;
+  --pine-light:#3a7055;
+  --cream:     #f7f3ec;
+  --cream-dark:#ede7db;
+  --amber:     #c07a2e;
+  --amber-light:#e8a44a;
+  --text:      #1a1a18;
+  --text-muted:#5a5a52;
+  --white:     #ffffff;
+  --radius:    8px;
+  --shadow:    0 4px 24px rgba(30,61,42,.13);
+}
+
+/* ─── RESET ──────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ─── NAV ────────────────────────────────────────────────── */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--pine);
+  border-bottom: 3px solid var(--amber);
+}
+.nav-inner {
+  max-width: 1000px; margin: 0 auto;
+  padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 56px;
+}
+.nav-logo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem; font-weight: 700;
+  color: var(--cream);
+  letter-spacing: .02em;
+}
+.nav-logo span { color: var(--amber-light); }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a {
+  color: rgba(247,243,236,.72);
+  font-size: .875rem; font-weight: 500;
+  letter-spacing: .04em; text-transform: uppercase;
+  transition: color .2s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--amber-light); }
+
+/* ─── HERO ───────────────────────────────────────────────── */
+.hero {
+  background: linear-gradient(175deg, var(--pine) 0%, var(--pine-mid) 60%, #2a4e36 100%);
+  padding: 0 0 56px;
+  overflow: hidden;
+  position: relative;
+}
+.pine-row {
+  display: flex; align-items: flex-end; justify-content: center;
+  gap: 6px; padding-top: 32px; margin-bottom: -12px;
+}
+.pine { width: 52px; height: 80px; }
+.pine--tall { height: 100px; width: 44px; }
+.pine--short { height: 62px; }
+
+.hero-text { text-align: center; padding: 36px 24px 0; }
+.hero-eyebrow {
+  font-size: .8rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--amber-light); margin-bottom: 10px;
+}
+.hero-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700; color: var(--cream);
+  line-height: 1.05; letter-spacing: -.01em;
+}
+.hero-meta {
+  margin-top: 16px;
+  font-size: .95rem; color: rgba(247,243,236,.7);
+  letter-spacing: .05em;
+}
+
+/* ─── MAIN ───────────────────────────────────────────────── */
+.main { max-width: 1000px; margin: 0 auto; padding: 56px 24px 80px; }
+
+.section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2rem; font-weight: 700;
+  color: var(--pine); margin-bottom: 6px;
+}
+.section-sub { font-size: .9rem; color: var(--text-muted); margin-bottom: 32px; }
+
+/* ─── TABS ───────────────────────────────────────────────── */
+.day-tabs {
+  display: flex; gap: 4px; margin-bottom: 0;
+  border-bottom: 2px solid var(--cream-dark);
+}
+.tab {
+  background: none; border: none; cursor: pointer;
+  padding: 12px 28px;
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: background .15s, border-color .15s;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.tab:hover { background: var(--cream-dark); }
+.tab.active {
+  border-bottom-color: var(--pine-mid);
+  background: var(--white);
+}
+.tab-day { font-weight: 600; font-size: .95rem; color: var(--pine); }
+.tab-date { font-size: .78rem; color: var(--text-muted); }
+
+/* ─── SCHEDULE TABLE ─────────────────────────────────────── */
+.schedule-panel { display: none; }
+.schedule-panel.active { display: block; }
+
+.schedule-table {
+  width: 100%; border-collapse: collapse;
+  background: var(--white);
+  border-radius: 0 var(--radius) var(--radius) var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.schedule-table thead tr {
+  background: var(--pine);
+  color: var(--cream);
+}
+.schedule-table th {
+  padding: 13px 18px;
+  font-size: .78rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+  text-align: left;
+}
+.schedule-table td {
+  padding: 14px 18px;
+  font-size: .9rem;
+  border-bottom: 1px solid var(--cream-dark);
+  vertical-align: middle;
+}
+.schedule-table tr:last-child td { border-bottom: none; }
+
+.row-clickable {
+  cursor: pointer;
+  transition: background .15s;
+}
+.row-clickable:hover { background: #f0ede6; }
+.row-clickable:hover .session { color: var(--pine-mid); }
+
+.row-break td { background: #f7f5f0; color: var(--text-muted); }
+.row-break .session { font-style: italic; }
+
+.time { color: var(--text-muted); white-space: nowrap; font-size: .84rem; min-width: 170px; }
+.session { font-weight: 500; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.loc { color: var(--text-muted); font-size: .85rem; white-space: nowrap; }
+
+/* ─── TAGS ───────────────────────────────────────────────── */
+.tag {
+  display: inline-block;
+  padding: 2px 8px; border-radius: 4px;
+  font-size: .7rem; font-weight: 600;
+  letter-spacing: .05em; text-transform: uppercase;
+  white-space: nowrap;
+}
+.tag--talk     { background: #dbeafe; color: #1e40af; }
+.tag--workshop { background: #ede9fe; color: #5b21b6; }
+.tag--activity { background: #dcfce7; color: #166534; }
+.tag--social   { background: #fef3c7; color: #92400e; }
+.tag--break    { background: #f3f4f6; color: #6b7280; }
+.tag--arrival  { background: #fee2e2; color: #991b1b; }
+.tag--welcome  { background: #fce7f3; color: #9d174d; }
+
+/* ─── MODAL ──────────────────────────────────────────────── */
+.modal-overlay {
+  display: none;
+  position: fixed; inset: 0; z-index: 200;
+  background: rgba(20,40,28,.55);
+  backdrop-filter: blur(3px);
+  align-items: center; justify-content: center;
+  padding: 24px;
+}
+.modal-overlay.open { display: flex; }
+.modal-box {
+  background: var(--white);
+  border-radius: 12px;
+  max-width: 540px; width: 100%;
+  padding: 36px 36px 32px;
+  position: relative;
+  box-shadow: 0 12px 48px rgba(0,0,0,.22);
+  border-top: 4px solid var(--amber);
+  animation: modal-in .18s ease;
+}
+@keyframes modal-in {
+  from { transform: translateY(12px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.modal-close {
+  position: absolute; top: 16px; right: 18px;
+  background: none; border: none; cursor: pointer;
+  font-size: 1.6rem; color: var(--text-muted);
+  line-height: 1; padding: 4px;
+  transition: color .15s;
+}
+.modal-close:hover { color: var(--text); }
+.modal-time {
+  font-size: .8rem; color: var(--text-muted);
+  letter-spacing: .05em; margin-bottom: 8px;
+}
+.modal-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem; font-weight: 700;
+  color: var(--pine); margin-bottom: 6px; line-height: 1.2;
+}
+.modal-loc {
+  font-size: .85rem; color: var(--amber);
+  font-weight: 600; margin-bottom: 18px;
+}
+.modal-body { font-size: .9rem; line-height: 1.7; color: var(--text); }
+.modal-body p { margin-bottom: 10px; }
+.modal-body ul { padding-left: 18px; }
+.modal-body ul li { margin-bottom: 4px; }
+.modal-body strong { color: var(--pine); }
+
+/* ─── FOOTER ─────────────────────────────────────────────── */
+.footer {
+  background: var(--pine);
+  color: rgba(247,243,236,.65);
+  text-align: center;
+  padding: 28px 24px;
+  font-size: .85rem;
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+}
+.footer a { color: var(--amber-light); font-weight: 600; }
+.footer a:hover { text-decoration: underline; }
+
+/* ─── MAP PAGE ───────────────────────────────────────────── */
+.map-hero {
+  background: linear-gradient(175deg, var(--pine) 0%, var(--pine-mid) 100%);
+  padding: 56px 24px;
+  text-align: center;
+}
+.map-hero .hero-eyebrow { color: var(--amber-light); font-size: .8rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 10px; }
+.map-hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700; color: var(--cream);
+}
+.map-hero p { margin-top: 12px; color: rgba(247,243,236,.7); font-size: .95rem; }
+
+.map-main { max-width: 1000px; margin: 0 auto; padding: 56px 24px 80px; }
+
+.map-wrap {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.site-svg-wrap {
+  padding: 32px;
+  background: var(--white);
+}
+.site-svg-wrap svg { width: 100%; height: auto; display: block; }
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+.location-card {
+  background: var(--white);
+  border: 1.5px solid var(--cream-dark);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  box-shadow: 0 2px 10px rgba(30,61,42,.07);
+}
+.location-card .loc-icon { font-size: 1.5rem; margin-bottom: 8px; }
+.location-card .loc-name { font-weight: 600; font-size: .95rem; color: var(--pine); margin-bottom: 4px; }
+.location-card .loc-desc { font-size: .82rem; color: var(--text-muted); line-height: 1.4; }
+
+.map-directions {
+  margin-top: 40px;
+  background: var(--pine);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  color: var(--cream);
+}
+.map-directions h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.4rem; margin-bottom: 16px; color: var(--cream);
+}
+.map-directions p, .map-directions li { font-size: .9rem; color: rgba(247,243,236,.8); line-height: 1.7; }
+.map-directions ul { padding-left: 18px; margin-top: 8px; }
+.map-directions strong { color: var(--amber-light); }
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .nav-inner { padding: 0 16px; }
+  .main { padding: 36px 16px 60px; }
+  .day-tabs { gap: 2px; }
+  .tab { padding: 10px 16px; }
+  .schedule-table th:last-child,
+  .schedule-table td:last-child { display: none; }
+  .modal-box { padding: 28px 22px 24px; }
+  .site-svg-wrap { padding: 16px; }
+  .map-main { padding: 36px 16px 60px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .modal-box { animation: none; }
+}

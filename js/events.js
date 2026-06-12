@@ -2,70 +2,58 @@
 const EVENTS = {
   // DAY 1
   "d1-1": {
-    title: "Arrival & Check-In",
-    time: "8:30 – 9:30 AM · Wednesday, June 24",
-    location: "Main Lodge",
-    body: `<p>Welcome to Loon Lake Lodge! Head to the Main Lodge front desk to check in and collect your name tag and retreat packet.</p>
-           <p>Grab a coffee, find your cabin, and get settled before the opening session begins at 9:30 AM.</p>
-           <ul><li>Parking available in the north lot</li><li>Cabin assignments are in your welcome packet</li><li>Wi-Fi password posted in the lodge</li></ul>`
+    title: "Arrival & Icebreaker",
+    time: "9:00 – 11:30 AM · Wednesday, June 24",
+    location: "Pan Abode",
+    body: `<p>Welcome to Loon Lake Lodge! Settle into your cabins, then return to Pan Abode for our icebreaker activity.</p>`
   },
   "d1-2": {
-    title: "Opening Remarks & Lab Overview",
-    time: "9:30 – 10:30 AM · Wednesday, June 24",
-    location: "Great Hall",
-    body: `<p>PI opens the retreat with a welcome address, reflecting on the past year's accomplishments and setting the tone for the days ahead.</p>
-           <p>This session will cover lab highlights, publications, and a high-level preview of the themes for this retreat.</p>
-           <ul><li>Speaker: [PI Name]</li><li>Format: Presentation + open Q&A</li></ul>`
+    title: "Research Mix-up",
+    time: "11:30 AM – 12:30 PM · Wednesday, June 24",
+    location: "Pan Abode",
+    body: `<p>A fun activity where we learn about each other's research.</p>`
   },
   "d1-3": {
-    title: "Research Presentation I",
-    time: "10:30 – 11:30 AM · Wednesday, June 24",
-    location: "Great Hall",
-    body: `<p>[Presenter Name] will share their latest research findings.</p>
-           <p><strong>Title:</strong> [Presentation Title]</p>
-           <p><strong>Abstract:</strong> [Add abstract or description here.]</p>
-           <ul><li>20 min presentation · 10 min Q&A · 30 min discussion</li></ul>`
+    title: "Lunch",
+    time: "12:30 – 1:30 PM · Wednesday, June 24",
+    location: "Bentley Dining Hall",
+    body: `<p><strong>Fish Tacos</strong></p>
+           <p>Cajun rubbed seasonal fish, cilantro cabbage slaw, mango lime salsa, creamy garlic drizzle, yam fries and ancho dip</p>`
   },
   "d1-4": {
-    title: "Research Presentation II",
-    time: "12:30 – 1:30 PM · Wednesday, June 24",
-    location: "Great Hall",
-    body: `<p>[Presenter Name] will share their latest research findings.</p>
-           <p><strong>Title:</strong> [Presentation Title]</p>
-           <p><strong>Abstract:</strong> [Add abstract or description here.]</p>
-           <ul><li>20 min presentation · 10 min Q&A · 30 min discussion</li></ul>`
+    title: "Research Talk",
+    time: "1:30 – 2:30 PM · Wednesday, June 24",
+    location: "Pan Abode",
+    body: `<p><strong>Paul Pavlidis</strong></p>
+           <p>he Pavlidis Lab at the University of British Columbia does research in neuroscience, bioinformatics, computational biology, functional genomics and genetics – “neuroinformatics”.</p>`
   },
   "d1-5": {
-    title: "Research Presentation III",
-    time: "1:30 – 2:30 PM · Wednesday, June 24",
-    location: "Great Hall",
-    body: `<p>[Presenter Name] will share their latest research findings.</p>
-           <p><strong>Title:</strong> [Presentation Title]</p>
-           <p><strong>Abstract:</strong> [Add abstract or description here.]</p>
-           <ul><li>20 min presentation · 10 min Q&A · 30 min discussion</li></ul>`
+    title: "Free time",
+    time: "2:30 – 4:30 PM · Wednesday, June 24",
+    location: "Outside",
+    body: `<p>Explore the natural beauty of Loon Lake!</p>
+           <p>Bubble Ball will run from 2:30 - 4 PM. Meet the activity coordinator outside of Pan Abode to participate.</p>`
   },
   "d1-6": {
-    title: "Lab Strategy Workshop",
-    time: "2:30 – 3:30 PM · Wednesday, June 24",
-    location: "Seminar Room",
-    body: `<p>A facilitated group workshop to discuss lab direction, upcoming projects, and collaborative opportunities.</p>
-           <p>Come prepared to share one idea for how the lab could grow or improve over the next year.</p>
-           <ul><li>Facilitated by: [Name]</li><li>Bring a notebook — we'll capture ideas on the whiteboard</li></ul>`
+    title: "Student Talks",
+    time: "4:30 – 5:30 PM · Wednesday, June 24",
+    location: "Pan Abode",
+    body: `<p>Trainee talks from various attending lab members.</p>
+           <ul><li>Herbert Yao - Yachie Lab</li><li>Neera Patadia - Pavlidis Lab</li><li>Nick Mateyko - de Boer Lab</li><li>Sambina Aninta - de Boer Lab</li></ul>`
   },
   "d1-7": {
-    title: "Team Icebreaker Activities",
-    time: "4:30 – 5:30 PM · Wednesday, June 24",
-    location: "Lawn / Lake",
-    body: `<p>Fun team activities designed to mix up the lab and spark connections across project groups.</p>
-           <p>Activities include: [e.g. scavenger hunt, relay race, trivia warm-up — add yours here].</p>
-           <ul><li>Wear comfortable outdoor clothes</li><li>Sunscreen recommended</li></ul>`
+    title: "Dinner",
+    time: "5:30 – 6:30 PM · Wednesday, June 24",
+    location: "Bentley Dining Hall",
+    body: `<p><strong>Angus Roast Beef</strong></p>
+           <p>Served with Yorkshire pudding, garlic mashed potatoes, seasonal veggies, gravy, and salad</p>`
   },
   "d1-8": {
-    title: "Evening Bonfire & Welcome Toast",
+    title: "Academic Debate",
     time: "6:30 – 7:30 PM · Wednesday, June 24",
-    location: "Fire Pit",
-    body: `<p>Gather around the fire to close out Day 1 with a welcome toast and informal conversation.</p>
-           <p>S'mores provided. Bring a drink from the lodge and enjoy the lakeside evening.</p>`
+    location: "Pan Abode",
+    body: `<p>Moderated by Abdul Muntakim Rafi</p>
+           <p>A lively debate between PIs and students on various topics.</p>`
   },
   // DAY 2
   "d2-1": {

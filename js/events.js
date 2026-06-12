@@ -25,7 +25,7 @@ const EVENTS = {
     time: "1:30 – 2:30 PM · Wednesday, June 24",
     location: "Pan Abode",
     body: `<p><strong>Paul Pavlidis</strong></p>
-           <p>he Pavlidis Lab at the University of British Columbia does research in neuroscience, bioinformatics, computational biology, functional genomics and genetics – “neuroinformatics”.</p>`
+           <p>The Pavlidis Lab at the University of British Columbia does research in neuroscience, bioinformatics, computational biology, functional genomics and genetics – “neuroinformatics”.</p>`
   },
   "d1-5": {
     title: "Free time",
@@ -38,7 +38,7 @@ const EVENTS = {
     title: "Student Talks",
     time: "4:30 – 5:30 PM · Wednesday, June 24",
     location: "Pan Abode",
-    body: `<p>Trainee talks from various attending lab members.</p>
+    body: `<p>Trainee talks from various attending lab members. Prizes are awarded for the funniest and most informative talks!</p>
            <ul><li>Herbert Yao - Yachie Lab</li><li>Neera Patadia - Pavlidis Lab</li><li>Nick Mateyko - de Boer Lab</li><li>Sambina Aninta - de Boer Lab</li></ul>`
   },
   "d1-7": {
@@ -57,113 +57,94 @@ const EVENTS = {
   },
   // DAY 2
   "d2-1": {
-    title: "Keynote: Future Directions",
-    time: "9:30 – 10:30 AM · Thursday, June 25",
-    location: "Great Hall",
-    body: `<p>This keynote sets the scientific agenda for the coming year, presenting a roadmap for the lab's major research thrusts.</p>
-           <p><strong>Speaker:</strong> [PI Name or Invited Speaker]</p>
-           <p><strong>Theme:</strong> [Add overarching theme here]</p>`
+    title: "Breakfast",
+    time: "8:30 – 9:30 AM · Thursday, June 25",
+    location: "Bentley Dining Hall",
+    body: `<p><strong>Loon Lake Breakfast English Muffin</strong></p>
+           <p>English muffin, scrambled eggs, aged cheddar cheese, chives, bacon, back bacon, lettus, tomato, spicy mayo sauce, served with hashbrowns</p>`
   },
   "d2-2": {
-    title: "Research Presentation IV",
-    time: "10:30 – 11:30 AM · Thursday, June 25",
-    location: "Great Hall",
-    body: `<p>[Presenter Name] will share their latest research findings.</p>
-           <p><strong>Title:</strong> [Presentation Title]</p>
-           <p><strong>Abstract:</strong> [Add abstract or description here.]</p>
-           <ul><li>20 min presentation · 10 min Q&A · 30 min discussion</li></ul>`
+    title: "Research Talk",
+    time: "9:30 – 10:30 AM · Thursday, June 25",
+    location: "Pan Abode",
+    body: `<p><strong>Troy McDiarmid</strong></p>
+           <p>The McDiarmid Lab develops scalable synthetic neurobiology technologies to map, manipulate, and record gene regulation in the brain, with the ultimate goal of understanding and treating disorders of neurodevelopment and the neural immune system.</p>`
   },
   "d2-3": {
-    title: "Data & Methods Roundtable",
-    time: "11:30 AM – 12:30 PM · Thursday, June 25",
-    location: "Seminar Room",
-    body: `<p>An open roundtable discussion on data pipelines, analysis methods, and reproducibility practices in the lab.</p>
-           <p>Bring your current pain points and wins — this is a peer-sharing format, not a lecture.</p>
-           <ul><li>Topics: [e.g. software tools, data sharing, stats approaches]</li></ul>`
+    title: "Mental Health Workshop",
+    time: "10:30 – 11:30 AM · Thursday, June 25",
+    location: "Pan Abode",
+    body: `<p>Hosted by Helen Liu</p>
+           <p>A workshop for our mental health.</p>`
   },
   "d2-4": {
-    title: "Research Presentation V",
-    time: "1:30 – 2:30 PM · Thursday, June 25",
-    location: "Great Hall",
-    body: `<p>[Presenter Name] will share their latest research findings.</p>
-           <p><strong>Title:</strong> [Presentation Title]</p>
-           <p><strong>Abstract:</strong> [Add abstract or description here.]</p>
-           <ul><li>20 min presentation · 10 min Q&A · 30 min discussion</li></ul>`
+    title: "Informational Talk",
+    time: "11:30 AM – 12:30 PM · Thursday, June 25",
+    location: "Pan Abode",
+    body: `<p><strong>Bob Perry</strong></p>
+           <p>At the Conconi Family Biodevice Foundry, Bob leads the Rapid Prototyping Lab as an Engineering Technician. He partners with researchers, entrepreneurs, and early-stage companies to accelerate development in the microdevice and biomedical technology space.</p>`
   },
   "d2-5": {
-    title: "Grant Writing & Publishing Workshop",
-    time: "2:30 – 3:30 PM · Thursday, June 25",
-    location: "Seminar Room",
-    body: `<p>Practical workshop covering grant writing strategies, manuscript preparation, and navigating the publishing process.</p>
-           <ul><li>Facilitator: [Name]</li><li>Topics: [e.g. funding landscape, writing tips, target journals]</li><li>Bring questions!</li></ul>`
+    title: "Lunch",
+    time: "12:30 – 1:30 PM · Thursday, June 25",
+    location: "Bentley Dining Hall",
+    body: `<p><strong>Philly Beef Dip</strong></p>
+           <p>Thin sliced beef, au jus, sauteed mushrooms and onions, julienne pepper, swiss cheese, fries, salad</p>`
   },
   "d2-6": {
-    title: "Nature Hike",
-    time: "4:30 – 5:30 PM · Thursday, June 25",
-    location: "Forest Trail",
-    body: `<p>A guided hike through the forest trails around Loon Lake Lodge. A chance to decompress, enjoy the scenery, and have informal conversations away from the lecture hall.</p>
-           <ul><li>Distance: ~[X] km · Difficulty: Easy/Moderate</li><li>Wear closed-toe shoes</li><li>Meet at the trailhead behind Cabin Row</li></ul>`
+    title: "Free time",
+    time: "1:30 – 5:30 PM · Thursday, June 25",
+    location: "Outside",
+    body: `<p>Explore the natural beauty of Loon Lake!</p>
+           <p>Forest Laser Tag will run from 2:30 - 4 PM. Meet the activity coordinator outside of Pan Abode to participate.</p>
+           <p>The sauna is booked from 3:30 - 5:30 PM. Bring your own towel!</p>
+           <p>Canoes are available at the docks. Pick up a lifejacket and paddles before heading out!</p>`
   },
   "d2-7": {
-    title: "Lab Trivia Night",
+    title: "Dinner",
+    time: "5:30 – 6:30 PM · Thursday, June 25",
+    location: "Bentley Dining Hall",
+    body: `<p><strong>BC Wild Salmon</strong></p>
+           <p>Served with seasonal veggies, focaccia, and salad</p>`
+  },
+    "d2-8": {
+    title: "Family Feud: Lab Edition",
     time: "6:30 – 7:30 PM · Thursday, June 25",
-    location: "Great Hall",
-    body: `<p>Teams of 4–5 compete in a custom trivia night covering science, pop culture, lab history, and more.</p>
-           <p>Prizes for the winning team. Sign up at dinner or just show up — teams will be assigned on the spot.</p>`
+    location: "Pan Abode",
+    body: `<p>2 'families' will compete to name the most popular answers to commonly asked lab questions.</p>`
   },
   // DAY 3
   "d3-1": {
-    title: "Research Presentation VI",
-    time: "9:30 – 10:30 AM · Friday, June 26",
-    location: "Great Hall",
-    body: `<p>[Presenter Name] will share their latest research findings.</p>
-           <p><strong>Title:</strong> [Presentation Title]</p>
-           <p><strong>Abstract:</strong> [Add abstract or description here.]</p>
-           <ul><li>20 min presentation · 10 min Q&A · 30 min discussion</li></ul>`
+    title: "Breakfast",
+    time: "8:30 – 9:30 AM · Friday, June 26",
+    location: "Bentley Dining Hall",
+    body: `<p><strong>The Big Breakfast</strong></p>
+           <p>Scrambled eggs, side of crispy bacon, whole wheat toast, hashbrowns</p>`
   },
   "d3-2": {
-    title: "Lab Culture & Mentorship Discussion",
-    time: "10:30 – 11:30 AM · Friday, June 26",
-    location: "Seminar Room",
-    body: `<p>An open, facilitated conversation about what makes a great lab culture and how we support each other's growth.</p>
-           <p>Topics may include: onboarding, mentorship relationships, work-life balance, and inclusion.</p>
-           <ul><li>Format: Small group discussion → full group share-out</li></ul>`
+    title: "DEI Workshop",
+    time: "9:30 – 10:30 AM · Friday, June 26",
+    location: "Pan Abode",
+    body: `<p>A workshop to reflect on the role of DEI in lab life.</p>`
   },
   "d3-3": {
-    title: "Goals & Planning: Year Ahead",
-    time: "11:30 AM – 12:30 PM · Friday, June 26",
-    location: "Seminar Room",
-    body: `<p>Each lab member shares one to three goals for the coming year, individually and as a group.</p>
-           <p>We'll use this session to align on shared milestones and identify ways to support each other.</p>
-           <ul><li>Come with your goals written down</li><li>Outcomes will be compiled into a shared doc after the retreat</li></ul>`
+    title: "Research Talk",
+    time: "10:30 – 11:30 AM · Friday, June 26",
+    location: "Pan Abode",
+    body: `<p><strong>Chris Moraes</strong></p>
+           <p>The Moraes lab designs and builds microtechnologies to probe the complex relationships between mechanics, materials, and biological function in engineered tissues. By creating precision tissue engineering tools and cell culture systems, we gain insight into the physical mechanisms underlying cardiovascular, cancer and respiratory diseases; and aim to apply this knowledge in designing the next generation of therapeutic discovery platforms.</p>`
   },
   "d3-4": {
-    title: "Open Discussion & Q&A",
-    time: "1:30 – 2:30 PM · Friday, June 26",
-    location: "Great Hall",
-    body: `<p>A freeform session for any topics that didn't get enough airtime earlier in the retreat — questions, feedback, or ideas for the lab.</p>
-           <p>The floor is open. Submit topics anonymously in advance or raise them in the room.</p>`
+    title: "Free time",
+    time: "11:30 AM – 12:30 PM · Friday, June 26",
+    location: "Outside",
+    body: `<p>Go outside and enjoy the sunshine (hopefully).</p>`
   },
   "d3-5": {
-    title: "Optional: Kayaking / Free Time",
-    time: "2:30 – 3:30 PM · Friday, June 26",
-    location: "Lake Dock",
-    body: `<p>Spend the afternoon on the lake! Kayaks and life jackets are available at the dock on a first-come, first-served basis.</p>
-           <p>Not a kayaker? Relax on the dock, take a walk, or use this time freely.</p>
-           <ul><li>Max [X] kayaks available</li><li>Life jackets required</li></ul>`
-  },
-  "d3-6": {
-    title: "Closing Reflections",
-    time: "4:30 – 5:30 PM · Friday, June 26",
-    location: "Great Hall",
-    body: `<p>Each person shares one takeaway from the retreat — a new idea, a connection made, or something they're excited to work on.</p>
-           <p>We'll close with acknowledgments and a look ahead to next year's retreat.</p>`
-  },
-  "d3-7": {
-    title: "Farewell Gathering",
-    time: "6:30 – 7:30 PM · Friday, June 26",
-    location: "Lakeside Deck",
-    body: `<p>Wrap up the retreat with drinks and light bites on the lakeside deck. A casual send-off before everyone heads home tomorrow morning.</p>
-           <p>Safe travels — see you back in the lab!</p>`
+    title: "Lunch",
+    time: "12:30 – 1:30 PM · Friday, June 26",
+    location: "Bentley Dining Hall",
+    body: `<p><strong>Chicken Burgers</strong></p>
+           <p>Crispy breaded chicken patties with veggie toppings, cheddar cheese, fries, assorted condiments, salad or soup</p>`
   }
 };

@@ -122,25 +122,32 @@ const EVENTS = {
            <p>Scrambled eggs, side of crispy bacon, whole wheat toast, hashbrowns</p>`
   },
   "d3-2": {
+    title: "Check out",
+    time: "8:30 – 10:00 AM · Friday, June 26",
+    location: "Pan Abode",
+    body: `<p><strong>Please check out of bedrooms no later than 10:00 AM.</strong></p>
+           <p>Bring your belongings to Pan Abode for the rest of the day's activities.</p>`
+  },
+  "d3-3": {
     title: "DEI Workshop",
     time: "9:30 – 10:30 AM · Friday, June 26",
     location: "Pan Abode",
     body: `<p>A workshop to reflect on the role of DEI in lab life.</p>`
   },
-  "d3-3": {
+  "d3-4": {
     title: "Research Talk",
     time: "10:30 – 11:30 AM · Friday, June 26",
     location: "Pan Abode",
     body: `<p><strong>Chris Moraes</strong></p>
            <p>The Moraes lab designs and builds microtechnologies to probe the complex relationships between mechanics, materials, and biological function in engineered tissues. By creating precision tissue engineering tools and cell culture systems, we gain insight into the physical mechanisms underlying cardiovascular, cancer and respiratory diseases; and aim to apply this knowledge in designing the next generation of therapeutic discovery platforms.</p>`
   },
-  "d3-4": {
+  "d3-5": {
     title: "Free time",
     time: "11:30 AM – 12:30 PM · Friday, June 26",
     location: "Outside",
     body: `<p>Go outside and enjoy the sunshine (hopefully).</p>`
   },
-  "d3-5": {
+  "d3-6": {
     title: "Lunch",
     time: "12:30 – 1:30 PM · Friday, June 26",
     location: "Bentley Dining Hall",

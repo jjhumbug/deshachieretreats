@@ -8,10 +8,10 @@ const EVENTS = {
     body: `<p>Welcome to Loon Lake Lodge! Settle into your cabins, then return to Pan Abode for our icebreaker activity.</p>`
   },
   "d1-2": {
-    title: "Research Mix-up",
+    title: "Research Relay",
     time: "11:30 AM – 12:30 PM · Wednesday, June 24",
     location: "Pan Abode",
-    body: `<p>A fun activity where we learn about each other's research.</p>`
+    body: `<p>A fun activity where we learn about each other's research and test our scientific communication skills.</p>`
   },
   "d1-3": {
     title: "Lunch",
@@ -75,7 +75,7 @@ const EVENTS = {
     time: "10:30 – 11:30 AM · Thursday, June 25",
     location: "Pan Abode",
     body: `<p>Hosted by Helen Liu</p>
-           <p>A workshop for our mental health.</p>`
+           <p>This workshop aims to empower you to rewrite the stories you have about yourself.</p>`
   },
   "d2-4": {
     title: "Informational Talk",
@@ -97,7 +97,7 @@ const EVENTS = {
     location: "Outside",
     body: `<p>Explore the natural beauty of Loon Lake!</p>
            <p>Forest Laser Tag will run from 2:30 - 4 PM. Meet the activity coordinator outside of Pan Abode to participate.</p>
-           <p>The sauna is booked from 3:30 - 5:30 PM. Bring your own towel!</p>
+           <p>The sauna is booked from 3:30 - 5:30 PM. Please bring your own towel - using the towels from the cabins is not allowed.</p>
            <p>Canoes are available at the docks. Pick up a lifejacket and paddles before heading out!</p>`
   },
   "d2-7": {

@@ -75,7 +75,7 @@ const EVENTS = {
     time: "10:30 – 11:30 AM · Thursday, June 25",
     location: "Pan Abode",
     body: `<p>Hosted by Helen Liu</p>
-           <p>This workshop aims to empower you to rewrite the stories you have about yourself.</p>`
+           <p>This workshop will explore navigating procrastination through self compassion.</p>`
   },
   "d2-4": {
     title: "Informational Talk",
@@ -132,7 +132,7 @@ const EVENTS = {
     title: "DEI Workshop",
     time: "9:30 – 10:30 AM · Friday, June 26",
     location: "Pan Abode",
-    body: `<p>A workshop to reflect on the role of DEI in lab life.</p>`
+    body: `<p>Explore the role of DEI in lab life by working through and discussing various scenarios.</p>`
   },
   "d3-4": {
     title: "Research Talk",
